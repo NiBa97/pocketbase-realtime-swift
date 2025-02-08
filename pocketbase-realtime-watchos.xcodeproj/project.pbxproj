@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C561B2842D552A16001E9F09 /* pocketbase-realtime-watchos Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C561B2832D552A16001E9F09 /* pocketbase-realtime-watchos Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C561B2AC2D57A6C2001E9F09 /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = C561B2AB2D57A6C2001E9F09 /* EventSource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C561B2AC2D57A6C2001E9F09 /* EventSource in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +116,7 @@
 			);
 			name = "pocketbase-realtime-watchos Watch App";
 			packageProductDependencies = (
+				C561B2AB2D57A6C2001E9F09 /* EventSource */,
 			);
 			productName = "pocketbase-realtime-watchos Watch App";
 			productReference = C561B2832D552A16001E9F09 /* pocketbase-realtime-watchos Watch App.app */;
@@ -147,6 +150,7 @@
 			mainGroup = C561B2762D552A16001E9F09;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				C561B2AA2D57A6C2001E9F09 /* XCRemoteSwiftPackageReference "EventSource" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C561B27E2D552A16001E9F09 /* Products */;
@@ -432,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C561B2AA2D57A6C2001E9F09 /* XCRemoteSwiftPackageReference "EventSource" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Recouse/EventSource";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C561B2AB2D57A6C2001E9F09 /* EventSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C561B2AA2D57A6C2001E9F09 /* XCRemoteSwiftPackageReference "EventSource" */;
+			productName = EventSource;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C561B2772D552A16001E9F09 /* Project object */;
 }
